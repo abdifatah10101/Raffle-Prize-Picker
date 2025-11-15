@@ -1,15 +1,18 @@
 # Raffle Prize Picker
 
-This project collects five participant names from the user and stores them in a list. After all names are entered, the program uses `random.sample()` to randomly select three unique winners from the list. Each selected winner is printed in the order chosen, and the third winner is clearly marked as the Grand Prize winner. This script practices user input, loops, list handling, and random selection without repeats.
+This program collects five participant names and three prize names from the user. The last prize entered is treated as the Grand Prize. After collecting all inputs, the script uses `random.sample()` to randomly select three unique winners. Each winner is matched to a prize in the same order the prizes were entered. The first two winners receive regular prizes, and the third randomly selected winner receives the Grand Prize. This project practices loops, user input, list handling, and random selection without repeats.
 
 ---
 
 ## How It Works
-1. The program asks the user to enter five names.
-2. Each name is added to a list as it is entered.
-3. Once all five names are collected, `random.sample()` selects three different winners at random.
-4. The winners are printed in order.
-5. The third winner is announced as the Grand Prize winner.
+1. The program asks the user to enter five participant names, each stored in a list.
+2. The user then enters three prize names, with the final prize being the Grand Prize.
+3. The program randomly selects three different winners from the participant list.
+4. Winners are paired with prizes in order:
+   - Winner 1 → Prize 1  
+   - Winner 2 → Prize 2  
+   - Winner 3 → Grand Prize  
+5. The results are printed, clearly marking the Grand Prize winner.
 
 ---
 ## Skills Practiced
